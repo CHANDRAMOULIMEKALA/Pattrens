@@ -1,24 +1,34 @@
-package Pattrens;
-
-import java.util.Scanner;
+package Pattrens_dss;
 
 public class pattren7 {
 
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
-		System.out.println("Enter the number");
-		int n=s.nextInt();
-		for(int i=1;i<=n;i++)
+	public static void main(String[] args)
+	{
+		for(int rows=0;rows<19;rows++)
 		{
-			for(int j=n;j>=i;j--)
+			if(rows <10)
 			{
-				System.out.print(" ");
+				for(int spaces=0;spaces<9-rows;spaces++)
+				{
+					System.out.print(" ");
+				}
+				for(int stars=0;stars<=rows;stars++)
+				{
+					System.out.print("*"+" ");
+				}
 			}
-			for(int k=1;k<=i;k++)
+			else
 			{
-				System.out.print("*");
+				for(int spaces=0;spaces<=rows-10;spaces++)
+				{
+					System.out.print(" ");
+				}
+				for(int stars=0;stars<19-rows;stars++)
+				{
+					System.out.print("*"+" ");
+				}
 			}
-			System.out.println();
+		System.out.println();
 		}
 
 	}

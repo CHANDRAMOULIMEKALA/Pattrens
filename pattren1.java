@@ -1,26 +1,36 @@
-package Pattrens;
-
-import java.util.Scanner;
+package Pattrens_dss;
 
 public class pattren1 {
 
-	public static void main(String[] args) {
-	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter the limit:");
-	int n=sc.nextInt();
-	char c=64;
-	for(int i=1;i<=n;i++)
+	public static void main(String[] args)
 	{
-		for(int j=1;j<=i;j++)
+		for(int i=0;i<10;i++)
 		{
-			//char k=char(;
-			System.out.print((char)(c+j)+" ");
-			//c++;
-		}
+			if(i<5)
+			{
+				for(int j=0;j<5-i;j++)
+				{
+					System.out.print(" ");
+				}
+				for(int k=0;k<2*i;k++)
+				{
+					System.out.print("*");
+				}
+			}
+			else
+			{
+				for(int j=0;j<i-5;j++)
+				{
+					System.out.print(" ");
+				}
+				for(int k=0;k<20-2*i;k++)
+				{
+					System.out.print("*");
+				}
+			}
 		System.out.println();
-		//c++;
-	}
-	}
-	
+		}
+
 	}
 
+}

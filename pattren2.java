@@ -1,24 +1,22 @@
-package Pattrens;
-
-import java.util.Scanner;
+package Pattrens_dss;
 
 public class pattren2 {
-	public static void main(String argd[])
+
+	public static void main(String[] args) 
 	{
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the number: ");
-		int n=sc.nextInt();
-		char c='A';
-		for(int i=1;i<=n;i++)
+		for(int i=0;i<5;i++)
 		{
-			for(int j=n;j>=i;j--)
+			for(int j=0;j<i;j++)
 			{
-				System.out.print(c);
-				//c++;
+				System.out.print(" ");
 			}
-			System.out.println();
-			c++;
+			for(int k=0;k<10-2*i;k++)
+			{
+				System.out.print("*");
+			}
+		System.out.println();
 		}
+
 	}
 
 }
